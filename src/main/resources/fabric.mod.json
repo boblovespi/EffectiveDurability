@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "bob-effectivedurability",
+	"version": "${version}",
+	"name": "Effective Durability",
+	"description": "Display effective durability of things",
+	"authors": [
+		"boblovespi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bob-effectivedurability/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"boblovespi.effectivedurability.EffectiveDurability"
+		],
+		"client": [
+			"boblovespi.effectivedurability.client.EffectiveDurabilityClient"
+		],
+		"modmenu": [
+			"boblovespi.effectivedurability.client.ModMenuHandler"
+		]
+	},
+	"mixins": [
+		"bob-effectivedurability.mixins.json",
+		{
+			"config": "bob-effectivedurability.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": ">=${yacl_version}"
+	}
+}

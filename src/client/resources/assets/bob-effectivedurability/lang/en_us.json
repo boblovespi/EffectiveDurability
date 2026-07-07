@@ -1,0 +1,20 @@
+{
+	"bob-effectivedurability.item.durability_both": "%s %s",
+	"bob-effectivedurability.item.durability_only_values": "(%s / %s)",
+	"bob-effectivedurability.config.name": "Config",
+	"bob-effectivedurability.config.enabled": "Enabled",
+	"bob-effectivedurability.config.disabled": "Disabled",
+	"bob-effectivedurability.config.always_enable_tooltip.name": "Always enable durability tooltip",
+	"bob-effectivedurability.config.always_enable_tooltip.tooltip": "Whether to enable the durability tooltips at all times or not.",
+	"bob-effectivedurability.config.show_crosshair.name": "Enable crosshair display",
+	"bob-effectivedurability.config.show_crosshair.tooltip": "Whether to enable the custom crosshair overlay or not.",
+	"bob-effectivedurability.config.show_tooltip.name": "Tooltip mode",
+	"bob-effectivedurability.config.show_tooltip.tooltip": "'Vanilla' for vanilla durability, 'Effective' for effective durability, 'Both' to display both.",
+	"bob-effectivedurability.config.tooltip_mode.vanilla": "Vanilla",
+	"bob-effectivedurability.config.tooltip_mode.effective": "Effective",
+	"bob-effectivedurability.config.tooltip_mode.both": "Both",
+	"bob-effectivedurability.config.primary_color.name": "Tooltip color",
+	"bob-effectivedurability.config.primary_color.tooltip": "The color of the durability tooltip.",
+	"bob-effectivedurability.config.secondary_color.name": "Tooltip secondary color",
+	"bob-effectivedurability.config.secondary_color.tooltip": "The color of the vanilla durability when displaying both."
+}
