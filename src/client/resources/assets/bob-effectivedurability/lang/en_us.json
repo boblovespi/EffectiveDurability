@@ -16,5 +16,7 @@
 	"bob-effectivedurability.config.primary_color.name": "Tooltip color",
 	"bob-effectivedurability.config.primary_color.tooltip": "The color of the durability tooltip.",
 	"bob-effectivedurability.config.secondary_color.name": "Tooltip secondary color",
-	"bob-effectivedurability.config.secondary_color.tooltip": "The color of the vanilla durability when displaying both."
+	"bob-effectivedurability.config.secondary_color.tooltip": "The color of the vanilla durability when displaying both.",
+	"bob-effectivedurability.config.crosshair_time.name": "Crosshair display time",
+	"bob-effectivedurability.config.crosshair_time.tooltip": "How long to show the durability of the item next to the crosshair, in seconds. Set to negative values to show forever."
 }

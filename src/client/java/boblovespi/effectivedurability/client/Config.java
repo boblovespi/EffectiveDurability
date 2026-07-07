@@ -29,5 +29,5 @@ public class Config
 	@SerialEntry
 	public int secondaryColor = 0x555555;
 	@SerialEntry
-	public float maxTime = 3f;
+	public float maxTime = 2f;
 }

@@ -108,10 +108,10 @@ public class ModMenuHandler implements ModMenuApi
 										 .option(
 												 Option
 												 .<Float>createBuilder()
-												 .name(Component.translatable("bob-effectivedurability.config.secondary_color.name"))
+												 .name(Component.translatable("bob-effectivedurability.config.crosshair_time.name"))
 												 .description(
 														 OptionDescription.of(
-																 Component.translatable("bob-effectivedurability.config.secondary_color.tooltip")))
+																 Component.translatable("bob-effectivedurability.config.crosshair_time.tooltip")))
 												 .binding(defaults.maxTime, () -> inst.maxTime,
 														 b -> inst.maxTime = b)
 												 .controller(ModMenuHandler::secondsController)

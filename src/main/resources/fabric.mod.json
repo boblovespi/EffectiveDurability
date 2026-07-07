@@ -8,16 +8,13 @@
 		"boblovespi"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/boblovespi/EffectiveDurability",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "to be determined",
 	"icon": "assets/bob-effectivedurability/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"boblovespi.effectivedurability.EffectiveDurability"
-		],
 		"client": [
 			"boblovespi.effectivedurability.client.EffectiveDurabilityClient"
 		],
