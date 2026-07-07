@@ -9,12 +9,14 @@ import net.minecraft.util.Mth;
 
 public class EffectiveDurabilityClient implements ClientModInitializer
 {
+	public static EffectiveDurabilityClient instance;
 	private float timeSinceDurabilityChange;
 	private int lastDurability = -1;
 
 	@Override
 	public void onInitializeClient()
 	{
+		instance = this;
 		HudRenderCallback.EVENT.register(this::drawHudElements);
 		ClientTickEvents.START_CLIENT_TICK.register(this::onClientTick);
 	}
@@ -85,5 +87,14 @@ public class EffectiveDurabilityClient implements ClientModInitializer
 		graphics.pose().scale(scale, scale, scale);
 		graphics.drawString(font, text, 0, 0, opacity | 0xBBBBBB, false);
 		graphics.pose().popPose();
+	}
+
+	public void updateTime()
+	{
+		if (lastDurability >= 0)
+		{
+			var maxTime = Config.HANDLER.instance().maxTime;
+			timeSinceDurabilityChange = maxTime < 0 ? 1_000_000_000 : maxTime * 20;
+		}
 	}
 }

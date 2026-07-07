@@ -115,6 +115,7 @@ public class ModMenuHandler implements ModMenuApi
 												 .binding(defaults.maxTime, () -> inst.maxTime,
 														 b -> inst.maxTime = b)
 												 .controller(ModMenuHandler::secondsController)
+												 .flag(m -> EffectiveDurabilityClient.instance.updateTime())
 												 .build()
 												)
 										 .build()
