@@ -19,15 +19,17 @@ public class Config
 																													 .build())
 																		 .build();
 	@SerialEntry
-	public boolean alwaysEnableTooltip = false;
+	public boolean alwaysEnableTooltip = true;
 	@SerialEntry
 	public TooltipMode showEffectiveDurabilityInTooltip = TooltipMode.BOTH;
 	@SerialEntry
 	public boolean showEffectiveDurabilityByCrosshair = false;
 	@SerialEntry
-	public int primaryColor = 0xFFFFFF;
+	public int primaryColor = 0xB4ECE7;
 	@SerialEntry
 	public int secondaryColor = 0x555555;
 	@SerialEntry
 	public float maxTime = 2f;
+	@SerialEntry
+	public int durabilityThreshold = 0;
 }

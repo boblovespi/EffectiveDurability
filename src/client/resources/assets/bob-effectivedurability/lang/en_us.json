@@ -18,5 +18,7 @@
 	"bob-effectivedurability.config.secondary_color.name": "Tooltip secondary color",
 	"bob-effectivedurability.config.secondary_color.tooltip": "The color of the vanilla durability when displaying both.",
 	"bob-effectivedurability.config.crosshair_time.name": "Crosshair display time",
-	"bob-effectivedurability.config.crosshair_time.tooltip": "How long to show the durability of the item next to the crosshair, in seconds. Set to negative values to show forever."
+	"bob-effectivedurability.config.crosshair_time.tooltip": "How long to show the durability of the item next to the crosshair, in seconds. Set to negative values to show forever.",
+	"bob-effectivedurability.config.durability_threshold.name": "Low durability threshold",
+	"bob-effectivedurability.config.durability_threshold.tooltip": "The effective durability an item has to be below to show the durability by the tooltip. Set to 0 for any durability."
 }

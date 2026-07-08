@@ -64,6 +64,8 @@ public class EffectiveDurabilityClient implements ClientModInitializer
 			return;
 		if (timeSinceDurabilityChange <= 0)
 			return;
+		if (Config.HANDLER.instance().durabilityThreshold > 0 && effectiveCurrentDurability > Config.HANDLER.instance().durabilityThreshold)
+			return;
 
 		var font = minecraft.font;
 		var opacity = Mth.clamp((int) (0xFF * partialTime * 2 / maxTime), 0x04, 0xFF);

@@ -118,6 +118,19 @@ public class ModMenuHandler implements ModMenuApi
 												 .flag(m -> EffectiveDurabilityClient.instance.updateTime())
 												 .build()
 												)
+										 .option(
+												 Option
+												 .<Integer>createBuilder()
+												 .name(Component.translatable("bob-effectivedurability.config.durability_threshold.name"))
+												 .description(
+														 OptionDescription.of(
+																 Component.translatable("bob-effectivedurability.config.durability_threshold.tooltip")))
+												 .binding(defaults.durabilityThreshold, () -> inst.durabilityThreshold,
+														 b -> inst.durabilityThreshold = b)
+												 .controller(o -> IntegerFieldControllerBuilder.create(o).range(0, 100000))
+												 .flag(m -> EffectiveDurabilityClient.instance.updateTime())
+												 .build()
+												)
 										 .build()
 										  )
 								 .save(() -> Config.HANDLER.save())
