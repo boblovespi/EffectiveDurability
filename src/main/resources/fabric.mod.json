@@ -9,9 +9,10 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/boblovespi/EffectiveDurability",
-		"sources": "https://github.com/boblovespi/EffectiveDurability"
+		"sources": "https://github.com/boblovespi/EffectiveDurability",
+		"issues": "https://github.com/boblovespi/EffectiveDurability/issues"
 	},
-	"license": "GNU GPLv3",
+	"license": "GPL-3.0-only",
 	"icon": "assets/bob-effectivedurability/icon.png",
 	"environment": "client",
 	"entrypoints": {
