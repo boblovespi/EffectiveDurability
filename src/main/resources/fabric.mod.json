@@ -9,9 +9,9 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/boblovespi/EffectiveDurability",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/boblovespi/EffectiveDurability"
 	},
-	"license": "to be determined",
+	"license": "GNU GPLv3",
 	"icon": "assets/bob-effectivedurability/icon.png",
 	"environment": "client",
 	"entrypoints": {
